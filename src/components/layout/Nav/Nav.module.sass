@@ -1,20 +1,25 @@
 .nav
-    height: 10rem
+    height: 6rem
     width: 100%
     display: flex
-    align-items: center
+    align-items: end
     justify-content: space-between
     font-size: 2.4rem
+    margin-bottom: 6rem
     &__list
         display: flex
         flex-direction: row
+        padding-right: 3rem
     &__item
         list-style-type: none
         &:not(:last-child)
             margin-right: 2rem
     &__link
         text-decoration: none
-        color: #000
+        color: #ABB2BF
+        font-size: 16px
+        &:active
+            color: #FFFFFF
 
 .logo
     width: 20rem
@@ -22,3 +27,7 @@
         width: 20rem
         height: 10rem
         
+.left
+    display: flex
+    align-items: center
+    justify-content: space-between

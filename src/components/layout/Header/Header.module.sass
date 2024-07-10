@@ -1,5 +1,87 @@
 .header
-    width: 140rem
+    width: 120rem
     padding: 0 5rem
     margin: 0 auto
+    background: #282C33
+    height: 88rem
+
+.container
+    display: flex
+    flex-direction: column
+    align-items: center
+
+.container__main
+    display: flex
+    justify-content: space-between
+    height: 100%
+    width: 100%
+    color: #ffffff
+    padding-bottom: 11rem
+
+.about
+    &__text
+        padding-top: 7rem
+        width: 54rem
+        display: flex
+        flex-direction: column
+    &__paragraph
+        margin-bottom: 2.4rem
+        max-width: 46rem
+    &__title
+        margin-bottom: 3rem
+        max-width: 54rem
+    &__working
+        width: 40rem
+        height: 4rem
+        border: 1px solid #ABB2BF
+        margin: 0 auto
+        font-size: 1.6rem
+        display: grid
+        place-items: center
     
+
+.purple__text
+    color: #C778DD
+
+.phrase
+    &__container
+        position: relative
+        width: 71rem
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__text
+        position: relative
+        display: grid
+        place-items: center
+        height: 10rem
+        width: 71rem
+        font-size: 2.4rem
+        margin-bottom: 1rem
+        color: #fff
+        border: 1px solid #ABB2BF
+    &__author
+        position: absolute
+        right: 0
+        transform: translateY(165%)
+        display: grid
+        place-items: center
+        width: 16rem
+        height: 6rem
+        font-size: 2.4rem
+        color: #ABB2BF
+        border: 1px solid #ABB2BF
+
+.cantic
+    &__one
+        position: absolute
+        top: 0
+        left: 0
+        background: #C778DD
+        transform: translate(50%, -50%)
+    &__two
+        position: absolute
+        bottom: 0
+        right: 0
+        background: #C778DD
+        transform: translate(-50%, 0%)

@@ -1,9 +1,13 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import { Providers } from "@/components/common/Providers";
 import "../styles/globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const montserrat = Montserrat({ 
+  weight: ["400", "700"], 
+  style: ['normal', 'italic'],
+  subsets: ["latin"],
+  display: "swap"});
 
 export const metadata: Metadata = {
   title: "JdmShop",
@@ -17,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ru">
-      <body className={inter.className}>
+      <body className={montserrat.className}>
         <Providers>
           {children}
         </Providers>
