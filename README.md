@@ -1,36 +1,77 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Документация для проекта «Портфолио»
 
-## Getting Started
+## Описание проекта
 
-First, run the development server:
+Этот проект представляет собой веб-приложение "Портфолио", разработанное с использованием Next.js на TypeScript, React и с применением нового маршрутизатора (App Router). Проект включает в себя компоненты, расположенные в папке `components`, базу данных SQLite и авторизацию через NextAuth с использованием GitHub.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Проект нуждается в значительной доработке, оптимизации и рефакторинге. Однако я не планирую его доделывать.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Установка и запуск
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Предварительные требования
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Перед установкой убедитесь, что у вас установлены следующие программные компоненты:
 
-## Learn More
+- Node.js (рекомендуется версия 14.x или выше)
+- npm (версия 6.x или выше) или yarn (рекомендуется)
 
-To learn more about Next.js, take a look at the following resources:
+### Шаги по установке
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. **Клонирование репозитория**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+   Склонируйте репозиторий на свой локальный компьютер:
+   ```bash
+   git clone https://github.com/your-username/portfolio-project.git
+   cd portfolio-project
+   ```
 
-## Deploy on Vercel
+2. **Установка зависимостей**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   Установите необходимые зависимости с помощью npm или yarn:
+   ```bash
+   npm install
+   # или
+   yarn install
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+3. **Настройка базы данных**
+
+   Проект использует SQLite в качестве базы данных. Для инициализации базы данных выполните следующую команду:
+   ```bash
+   npx prisma migrate dev --name init
+   ```
+
+4. **Настройка переменных окружения**
+
+   Создайте файл `.env` в корне проекта и добавьте следующие переменные окружения:
+
+   ```plaintext
+   DATABASE_URL="file:./dev.db"
+   NEXTAUTH_URL="http://localhost:3000"
+   NEXTAUTH_SECRET="your-secret"
+   GITHUB_ID="your-github-client-id"
+   GITHUB_SECRET="your-github-client-secret"
+   ```
+
+5. **Запуск проекта**
+
+   Запустите проект в режиме разработки:
+   ```bash
+   npm run dev
+   # или
+   yarn dev
+   ```
+
+   Приложение будет доступно по адресу `http://localhost:3000`.
+
+## Используемые технологии
+
+- **Next.js**: Фреймворк для React, используемый для создания серверных рендеринг приложений.
+- **TypeScript**: Статическая типизация для JavaScript.
+- **React**: Библиотека для построения пользовательских интерфейсов.
+- **SQLite**: Легковесная встраиваемая база данных.
+- **NextAuth**: Решение для аутентификации с поддержкой различных провайдеров, включая GitHub.
+
+## Заключение
+
+Этот проект является базовой версией портфолио. Несмотря на то, что он нуждается в доработке, оптимизации и рефакторинге, его текущая реализация может служить основой для дальнейшего развития и улучшений.
