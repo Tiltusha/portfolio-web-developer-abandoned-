@@ -10,8 +10,8 @@ const montserrat = Montserrat({
   display: "swap"});
 
 export const metadata: Metadata = {
-  title: "JdmShop",
-  description: "Kupi slivy i sr20det v podarok",
+  title: "Portfolio",
+  description: "Porfolio",
 };
 
 export default function RootLayout({
