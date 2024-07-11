@@ -7,7 +7,7 @@ import AboutSection from "@/components/layout/aboutSection/aboutSection";
 import ContactSection from "@/components/layout/contactSection/contactSection";
 import Footer from "@/components/layout/footer/Footer";
 
-export default function Home() {
+const Home: React.FC = () => {
   return (
     <div className={styles.container}>
       <Header />
@@ -20,5 +20,8 @@ export default function Home() {
       <hr className={styles.hr} />
       <Footer />
     </div>
-);
-}
+  );
+};
+
+export default Home;
+

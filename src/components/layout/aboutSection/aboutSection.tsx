@@ -1,8 +1,12 @@
+import React from 'react';
 import SectionLine from '@/components/common/sectionLine/sectionLine';
 import styles from './aboutSection.module.sass';
 import ClassicBtn from '@/components/common/ClassicBtn/ClassicBtn';
 
-export default function AboutSection() {
+interface AboutSectionProps {
+}
+
+const AboutSection: React.FC<AboutSectionProps> = () => {
     return (
         <div className={styles.container}>
             <div className={styles.name}>
@@ -11,13 +15,9 @@ export default function AboutSection() {
             <div className={styles.content}>
                 <div className={styles.left}>
                     <p className={styles.text}>
-                    Привет, я Никита!
-                    <br />
-                    <br />
-                    Я фронтенд-разработчик-самоучка из Москвы, Россия. Я могу разрабатывать адаптивные веб-сайты с нуля и превращать их в современные, удобные для пользователя веб-интерфейсы. 
-                    <br />
-                    <br />
-                    Преобразование моего творчества и знаний в веб-сайты было моей страстью уже больше года. Я помогаю различным клиентам установить свое присутствие в Интернете. Я всегда стремлюсь узнавать о новейших технологиях и фреймворках.
+                        Привет, я Никита!<br /><br />
+                        Я фронтенд-разработчик-самоучка из Москвы, Россия. Я могу разрабатывать адаптивные веб-сайты с нуля и превращать их в современные, удобные для пользователя веб-интерфейсы. <br /><br />
+                        Преобразование моего творчества и знаний в веб-сайты было моей страстью уже больше года. Я помогаю различным клиентам установить свое присутствие в Интернете. Я всегда стремлюсь узнавать о новейших технологиях и фреймворках.
                     </p>
                     <ClassicBtn>Подробнее</ClassicBtn>
                 </div>
@@ -28,3 +28,5 @@ export default function AboutSection() {
         </div>
     )
 }
+
+export default AboutSection;
