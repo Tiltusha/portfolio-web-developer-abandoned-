@@ -12,7 +12,7 @@ export default function Header() {
                     <div className={styles.container__main}>
                         <div className={styles.about__text}>
                             <h1 className={styles.about__title}>Никита,  
-                                <span className={styles.purple__text}> web designer</span> и <span className={styles.purple__text}>front-end developer</span>
+                                <span className={styles.purple__text}> frontend developer</span> из <span className={styles.purple__text}>Москвы</span>
                             </h1>
                             <p className={styles.about__paragraph}>Я создаю адаптивные веб-сайты, где технологии сочетаются с творчеством</p>
                             <ClassicBtn>Написать мне</ClassicBtn>
